@@ -1,0 +1,18 @@
+
+server:
+  port: 9000
+
+spring:
+  application:
+    name: api-gateway
+  profiles:
+    active: @profileActive@
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      config:
+        server-addr: 101.201.235.188:8848
+        file-extension: yaml
+        group: DEFAULT_GROUP
+        namespace: 02c04789-0e01-49f8-adf8-b921bbeaaee6
